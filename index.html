@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>妊婦さん 食べてもOK？</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>妊婦さん向け食べ物チェッカー</h1>
+  <p>食べ物を入力すると判定します。</p>
+
+  <input id="foodInput" type="text" placeholder="例: コーヒー">
+  <button id="checkBtn">判定する</button>
+
+  <div id="result" class="result">ここに結果が出ます</div>
+
+  <!-- 注意事項 -->
+<section id="notes" aria-labelledby="notes-title" style="margin-top:24px;">
+    <h3 id="notes-title">基本的な注意点</h3>
+    <ul>
+      <li><strong>生もの：</strong>生肉は食中毒、トキソプラズマ感染リスクのため基本的に避ける</li>
+      <li><strong>カフェイン：</strong>1日200mg以下に制限（コーヒー1–2杯程度ならOK）</li>
+      <li><strong>水銀：</strong>マグロなど大型魚は控えめに</li>
+      <li><strong>ビタミンA：</strong>うなぎ、レバーは過剰摂取に注意</li>
+      <li><strong>チーズ：</strong>プロセスチーズは安全、ナチュラルチーズは加熱が必要</li>
+      <li><strong>アルコール：</strong>完全に避ける</li>
+    </ul>
+    <p style="font-size:0.9em; color:#666; margin-top:8px;">
+      ※ 心配なことがあれば主治医に相談しましょう。
+    </p>
+  </section>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

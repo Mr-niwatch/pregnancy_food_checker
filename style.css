@@ -1,0 +1,13 @@
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    padding: 20px;
+  }
+  
+h1 { font-size: 1.5em; }
+input, button { padding: 8px; font-size: 1em; }
+.result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+
+.ok { color: green; font-weight: bold; }
+.limit { color: orange; font-weight: bold; }
+.avoid { color: red; font-weight: bold; }
+.caution { color: goldenrod; font-weight: bold; }
