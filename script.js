@@ -258,9 +258,9 @@ const FOOD_DATA = [
     return "";
   }
   
-  // 判定（クラスは getClass）
+  // 判定（getClass）
   function checkFood() {
-    var query = document.getElementById("foodInput").value.trim();
+    var query = document.getElementById("foodName").value.trim();
     var food  = FOOD_DATA.find(function(item){ return item.name === query; });
   
     var resultDiv = document.getElementById("result");
@@ -280,31 +280,31 @@ const FOOD_DATA = [
   document.getElementById("checkBtn").addEventListener("click", checkFood);
 
   /*
-
-function：関数を定義する
-return：関数の戻り値を指定して処理終了
+試験勉強用覚書
+function：関数の定義
+return：関数の戻り値を指定して処理を終了する
 if (条件)：条件分岐
-===：値と型の両方を比較する厳密比較
+===：比較
 
-document.getElementById("id")：指定IDの要素を取得
-.value：入力欄などの値を取得
-.trim()：文字列の前後の空白を削除
+document.getElementById("id")：指定IDの要素を取得する
+.value：入力欄などの値を取得する
+.trim()：文字列の前後の空白を削除する
 
-FOOD_DATA.find(callback)：配列から条件に合う最初の1つを見つける
+FOOD_DATA.find(callback)：配列からヒットする1個を見つける
 function(item){ return ... }：findの中で使われる条件関数
 
 .innerHTML：HTMLの中身を書き換える
-+：文字列の連結
++：文字列を連結sる
 
-<span class="〇〇">：クラス付きでHTMLに表示
+<span class="〇〇">：一部分だけ適用する
 <br>：改行タグ（HTML）
 
 addEventListener("click", 関数)：クリック時に処理を実行するイベント設定
 
-変数名メモ：
-- query：ユーザー入力の食品名
-- food：見つかった食品オブジェクト
-- cls：クラス名（"ok"とか）
+変数メモ：
+- query：食材
+- food：見つかった食品
+- cls：クラス名
 - resultDiv：結果表示用の要素
 
 */
