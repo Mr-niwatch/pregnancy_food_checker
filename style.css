@@ -5,7 +5,11 @@ body {
   
 h1 { font-size: 24px; }
 input, button { padding: 8px; font-size: 24px; }
-.result { width: 50%; margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+.result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+#result {
+  width: 50%;
+  margin: 20px auto;
+}
 
 .ok { color: green; font-weight: bold; }
 .limit { color: orange; font-weight: bold; }
